@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+}
+p{
+font-family: fantasy;
+margin: 0;
+padding: 0;
+margin-left:60px ;
+}
+
+#authors-name {
+    font-family: fantasy;
+    margin: auto;
+    padding: 10px;
+    font-size: larger;
+    
+}
+
+h2{
+    font-family: fantasy;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+#index-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    grid-template-areas: 
+    "gallery-p gallery-p gallery-p gallery-p"
+    "gallery-h2 gallery-h2 gallery-h2 gallery-h2"
+    "img1 img2 img4 img4" 
+    "img3 img7 img8 img8"
+    "img3 img5 img6 img9";
+}
+
+
+    @media (max-width: 500px) {
+        #index-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    grid-template-areas: 
+    "gallery-p gallery-p gallery-p gallery-p"
+    "gallery-h2 gallery-h2 gallery-h2 gallery-h2"
+    "img1 img1 img1 img1"
+    "img2 img2 img2 img2"
+    "img3 img3 img3 img3"
+    "img4 img4 img4 img4"
+    "img5 img5 img5 img5"
+    "img6 img6 img6 img6"
+    "img7 img7 img7 img7"
+    "img8 img8 img8 img8"
+    "img9 img9 img9 img9";
+        }
+    }
+
+    @media screen and (max-width: 800px) and (min-width:501px) {
+        #index-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    grid-template-areas: 
+    "gallery-p gallery-p gallery-p gallery-p"
+    "gallery-h2 gallery-h2 gallery-h2 gallery-h2"
+    "img1 img1 img2 img2"
+    "img3 img3 img4 img4"
+    "img5 img5 img6 img6"
+    "img7 img7 img8 img8"
+    "img9 img9 img9 img9";
+        }
+    }
+
+#index-gallery .gallery-img {
+   width: 100%;
+   height: 300px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   cursor: pointer;
+   border-radius: 5px;
+   border: 0.5px solid black;
+}
+
+/* images */
+
+#index-gallery p {
+    grid-area: gallery-p;
+}
+#index-gallery h2 {
+grid-area: gallery-h2;
+}
+#index-gallery .img1 {
+  grid-area: img1;
+  background-image: url("thumbs/img1.jpg");
+ }
+
+ #index-gallery .img2 {
+    grid-area: img2;
+    background-image: url("thumbs/img2.jpg");
+   }
+   #index-gallery .img3 {
+    grid-area: img3;
+    background-image: url("thumbs/img3.jpg");
+    height: 610px;
+   }
+   #index-gallery .img4 {
+    grid-area: img4;
+    background-image: url("thumbs/img4.jpg");
+   }
+   #index-gallery .img5 {
+    grid-area: img5;
+    background-image: url("thumbs/img5.jpg");
+   }
+ #index-gallery .img6 {
+ grid-area: img6;
+ background-image: url("thumbs/img6.jpg");
+}
+
+#index-gallery .img7 {
+  grid-area: img7;
+  background-image: url("thumbs/img7.jpg");
+ }
+ #index-gallery .img8 {
+    grid-area: img8;
+    background-image: url("thumbs/img8.jpg");
+}
+#index-gallery .img9 {
+  grid-area: img9;
+  background-image: url("thumbs/img9.jpg");
+}
+
+/* gallery img title */
+.gallery-img div {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-img a {
+   font-family: fantasy;
+   font-size: 18px;
+   color: pink;
+   text-decoration: none;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+   .gallery-img div:hover {
+    opacity: 0.8;
+    transition: all ease-in-out 100ms; 
+}
+
+/*popup window */
+
+.img-window {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.img-window img {
+    max-height: 80vh;
+    max-width: 80vw;
+}
+
+/* next image */
+
+.img-btn-next {
+    display: block;
+    padding: 6px 10px;
+    border-radius: 4px;
+    background-color: #111111;
+    position: fixed;
+    top: 92%;
+    z-index: 500;
+    font-family: fantasy;
+    color: pink;
+    cursor: pointer;
+    text-transform: uppercase;
+    justify-content: center;
+    right: 35%;
+    margin: -5px;
+   
+}
+.img-btn-next:hover {
+    opacity: 0.8;
+}
+
+.img-btn-prev {
+    display: block;
+    padding: 6px 10px;
+    border-radius: 4px;
+    background-color: #111111;
+    position: fixed;
+    top: 92%;
+    z-index: 500;
+    font-family: fantasy;
+    color: pink;
+    cursor: pointer;
+    text-transform: uppercase;
+    justify-content: center;
+    left: 35%;
+    margin: -5px;
+}
+
+.img-btn-prev:hover {
+    opacity: 0.8;
+}

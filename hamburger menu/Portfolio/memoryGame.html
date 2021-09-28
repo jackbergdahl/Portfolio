@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <!---->
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="memoryBoard.css">
+            <link rel="stylesheet" href="svg.css">
+            <link rel="stylesheet" href="../css/styles.css">
+            <!--<link rel="stylesheet" href="css/reset.css">
+            <link rel="stylesheet" href="css/debug.css">-->
+            <script src="app.js" charset="utf-8" defer></script>
+            <title>Memory Game</title>
+    </head>
+<body>
+   <header>
+      <div class="brand-title">
+          <img src="/Photos/0.jpg" class="spinProfilPic" id="profilPic" width="150px" height="150px"/>
+      </div>
+      <p>Jack&nbsp;Bergdahl</p>
+              <nav class="navbar">
+            <!--<div class="brand-title">Jack Bergdahl</div>-->
+              <a href="#" class="toggle-button">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+              </a>
+              <div class="navbar-links">
+                  <ul>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Portfolio</a>
+                      <ul><li><a href="/Portfolio/memoryGame.html" target="_blank" class="dropDown">Memory Game</a></li></ul>
+                          <ul><li><a href="https://timetoexplore.me" target="_blank" class="dropDown">Timetoexplore.nu</a></li></ul>
+                      </li> 
+                      <li><a href="/photoGallery/index.html">PhotoGallery</a></li>
+                      <li><a href="#">Contact</a>
+                          <ul><li class="dropDown"><a>jack.bergdahl@gmail.com</a></li></ul>
+                          <ul><li><a href="https://www.linkedin.com/in/jack-bergdahl-4868a5144/" target="_blank" class="dropDown">LinkedIn</a></li></ul>
+                          <ul><li><a href="https://www.instagram.com/jackbergdahl/" target="_blank" class="dropDown">Instagram</a></li></ul>
+                          <ul><li><a href="https://www.facebook.com/jack.bergdahl.1/" target="_blank" class="dropDown">Facebook</a></li></ul>
+                  </li>
+                  </ul>
+              </div>
+          </nav>
+      </header>
+
+   <h1>Memory Game</h1>
+
+   <br>
+   <h3 id="resetBoard">Reset Board</h3>
+
+ <section class="memory-game" >
+  <div class="memory-card" data-img="japan">
+    <img class="front-face" src="images/japan.jpg" alt="japan">
+    <img class="back-face" src="images/blank.JPG" alt="blank">
+ </div>
+ <div class="memory-card" data-img="japan">
+    <img class="front-face" src="images/japan.jpg" alt="japan">
+    <img class="back-face" src="images/blank.JPG" alt="blank">
+ </div>
+ <div class="memory-card" data-img="myanmar">
+    <img class="front-face" src="images/myanmar.jpg" alt="myanmar">
+    <img class="back-face" src="images/blank.JPG" alt="blank">
+    </div>
+ <div class="memory-card" data-img="myanmar">
+    <img class="front-face" src="images/myanmar.jpg" alt="myanmar">
+    <img class="back-face" src="images/blank.JPG" alt="blank">
+ </div>
+ <div class="memory-card" data-img="nerja">
+    <img class="front-face" src="images/nerja.jpg" alt="nerja">
+    <img class="back-face" src="images/blank.JPG" alt="blank">
+ </div>
+ <div class="memory-card" data-img="nerja">
+    <img class="front-face" src="images/nerja.jpg" alt="nerja">
+    <img class="back-face" src="images/blank.JPG" alt="blank">
+ </div>
+ <div class="memory-card" data-img="sverige">
+    <img class="front-face" src="images/sverige.jpg" alt="sverige">
+    <img class="back-face" src="images/blank.JPG" alt="blank">
+ </div>
+ <div class="memory-card" data-img="sverige">
+    <img class="front-face" src="images/sverige.jpg" alt="sverige">
+    <img class="back-face" src="images/blank.JPG" alt="blank">
+ </div>
+ <div class="memory-card" data-img="switzerland">
+    <img class="front-face" src="images/switzerland.JPG" alt="switzerland">
+    <img class="back-face" src="images/blank.JPG" alt="blank">
+ </div>
+ <div class="memory-card" data-img="switzerland">
+    <img class="front-face" src="images/switzerland.JPG" alt="switzerland">
+    <img class="back-face" src="images/blank.JPG" alt="blank">
+ </div>
+ <div class="memory-card" data-img="thailand">
+    <img class="front-face" src="images/thailand.jpg" alt="thailand">
+    <img class="back-face" src="images/blank.JPG" alt="blank">
+ </div>
+ <div class="memory-card" data-img="thailand">
+    <img class="front-face" src="images/thailand.jpg" alt="thailand">
+    <img class="back-face" src="images/blank.JPG" alt="blank">
+ </div>
+
+ <div class="container">
+   <div class="svg hide" id="svg">
+   </div>
+</div>
+</section>
+
+
+<script src="../main.js" charset="utf-8" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js" integrity="sha512-srGxQe2w7s50+5/nNgEVKYtBm15zRylJwdjxYnGEZr3mmHFJKFjA/ImA2OKizVzoIDX8XISMHDI1+az9pnumbQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+</html>
